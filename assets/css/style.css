@@ -1,0 +1,55 @@
+/* Universal Elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Selector Elements */
+body {
+    background-color: #083c52;
+}
+
+header {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #083c52;
+    color: #ffffff;
+}    
+
+header h1 {
+    color: #74a391;
+    display: inline-block;
+    font-size: 48px;
+}
+
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header div ul li {
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #56acad;
+}
+
+/* Main class Elements */
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
