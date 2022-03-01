@@ -1,3 +1,16 @@
+/* Variables */
+:root {
+    --blue: #083c52;
+    --turquoise: #56acad;
+    --white: #fff;
+}
+
+/* set content highlight color and background */
+::selection {
+    background-color: var(--turquoise);
+    color: var(--blue);
+}
+
 /* Universal Elements */
 * {
     box-sizing: border-box;
@@ -7,20 +20,21 @@
 
 /* Selector Elements */
 body {
-    background-color: #083c52;
+    background-color: var(--white);
 }
 
 header {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #083c52;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
 }    
 
 header h1 {
     color: #74a391;
     display: inline-block;
     font-size: 48px;
+    padding-left: 10px;
 }
 
 header div {
@@ -37,12 +51,12 @@ header div ul li {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
 a:hover {
-    color: #56acad;
+    color: var(--turquoise);
 }
 
 /* Main class Elements */
