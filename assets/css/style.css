@@ -32,6 +32,8 @@ header {
 
 header h1 {
     color: #74a391;
+    font-style: italic;
+    font-family: auto;
     display: inline-block;
     font-size: 48px;
     padding-left: 10px;
@@ -61,9 +63,25 @@ a:hover {
 
 /* Main class Elements */
 .hero {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2016/09/abstract-background-1280x341.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-sub {
+    position: absolute;
+    padding-right: 40px;
+    color: var(--turquoise);
+    font-style: italic;
+    font-size: 2rem;
+    font-family: serif;
+    margin: 10px;
+    bottom: 30px;
 }
