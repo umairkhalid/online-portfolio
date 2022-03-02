@@ -11,17 +11,19 @@
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
         <h1 class="headings">Umair Khalid</h1>
 
-        <div class="nav-container">
+        <nav class="nav-container">
             <ul>
-                <li> <a href="#">About Me</a></li>
-                <li> <a href="#">Work</a></li>
+                <li> <a href="#top">Home</a></li>
+                <li> <a href="#about-me">About Me</a></li>
+                <li> <a href="#work">Work</a></li>
                 <li> <a href="#">Contact Me</a><li>
                 <li> <a href="#">Resume</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <!-- Main hero background -->
@@ -31,7 +33,7 @@
 
     <!-- List of all content items -->
     <main>
-        <div class="container">
+        <div class="container" id="about-me">
             <div class="content-headings">
                 <h2 class="headings">About Me</h2>
             </div>
@@ -42,39 +44,30 @@
                 eagerness to this opportunity.</p>
             </div>
         </div>
-        <div class="container">
+
+        <div class="container" id="work">
             <div class="content-headings">
                 <h2 class="headings">Work</h2>
             </div>
             <div class="card-container">
-                    <div class="card">
-                        <h2 class="headings">Camera</h2>
-                        <img src="./assets/images/camera.jpg" alt="black camera" />
-                        <p>Price: $300</p>
-                      </div>
-                      <div class="card">
-                        <h2 class="headings">Tablet</h2>
-                        <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-                        <p>Price: $150</p>
-                      </div>
-                      <div class="card">
-                        <h2 class="headings">Toilet Paper</h2>
-                        <img
-                          src="./assets/images/toilet-paper.jpg"
-                          alt="rolls of toilet paper in a basket"
-                        />
-                        <p>Price: $30</p>
-                      </div>
-                      <div class="card">
-                        <h2 class="headings">Wooden Spoons</h2>
-                        <img
-                          src="./assets/images/wooden-spoons.jpg"
-                          alt="4 wooden spoons with different seasonings"
-                        />
-                        <p>Price: $10</p>
-                      </div>
-                    </div>
+                <div class="card">
+                    <h2 class="headings">Camera</h2>
+                    <img src="./assets/images/camera.jpg" alt="black camera" />
+                </div>
+                <div class="card">
+                    <h2 class="headings">Tablet</h2>
+                    <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
+                </div>
+                <div class="card">
+                    <h2 class="headings">Toilet Paper</h2>
+                    <img src="./assets/images/toilet-paper.jpg" alt="rolls of toilet paper in a basket"/>
+                </div>
+                <div class="card">
+                    <h2 class="headings">Wooden Spoons</h2>
+                    <img src="./assets/images/wooden-spoons.jpg" alt="4 wooden spoons with different seasonings"/>
+                </div>
             </div>
+        </div>
     </main>
 
     <footer>
