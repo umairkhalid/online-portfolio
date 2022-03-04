@@ -134,8 +134,8 @@ footer p {
 }
 
 .mypic {
-    width: 11vw;
-    height: 13vw;
+    width: 25vw;
+    height: 28vw;
     position: relative;
     right: 15px;
     top: 0vw;
@@ -170,7 +170,7 @@ a.card:hover {
 }
 
 .card {
-    border-style: solid;
+    border: solid 4px rgb(0, 0, 0);
     border-width: 1px;
     padding: 0px;
     margin: 1rem;
