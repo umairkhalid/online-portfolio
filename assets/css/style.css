@@ -85,7 +85,7 @@ footer p {
 .headings {
     color: #74a391;
     font-style: italic;
-    font-family: auto;
+    font-family: serif;
     display: inline-block;
     font-size: 48px;
     padding-left: 10px;
@@ -256,7 +256,8 @@ a.card:hover {
 
 @media screen and (max-width: 768px) {
     header,
-    .container
+    .container,
+    div#about-me.container .card-container
     {
         flex-direction: column;
     }
@@ -271,5 +272,17 @@ a.card:hover {
 
     .nav-link {
         margin: auto;
+    }
+
+    .mypic {
+        left: 27px;
+        height: 32vh;
+        width: 28vh;
+        margin-bottom: 2rem;
+    }
+
+    .p {
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }
