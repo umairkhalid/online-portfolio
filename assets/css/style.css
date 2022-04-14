@@ -285,4 +285,15 @@ a.card:hover {
         padding-left: 0rem;
         padding-right: 0rem;
     }
+
+    .nav-container {
+        font-size: 15px;
+    }
+
+    .nav-link li {
+        display: flex;
+        position: relative;
+        right: 78px;
+        /* padding: 0px 3vh; */
+        line-height: 0.9rem;
 }
