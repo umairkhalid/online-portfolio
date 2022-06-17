@@ -225,7 +225,7 @@ footer p {
 			
 		.card:hover .info {
             opacity: 1;
-			transform: translateY(-20px);
+			transform: translateY(-10px);
         }
 			
 	.card:before {
