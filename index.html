@@ -16,13 +16,18 @@
         <h1 class="headings">Umair Khalid</h1>
 
         <nav class="nav-container">
-            <ul>
-                <li> <a href="#home">Home</a></li>
-                <li> <a href="#about-me">About Me</a></li>
-                <li> <a href="#work">Work</a></li>
-                <li> <a href="#contact">Contact Me</a><li>
-                <li> <a href="https://drive.google.com/file/d/1GwEbXEJLJZXkx-SqxCBybLJ_rFb-uxVl/view?usp=sharing" target="_blank">Resume</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"> <a class="nav-a" href="#home" onclick="closeMenu()">Home</a></li>
+                <li class="nav-item"> <a class="nav-a" href="#about-me" onclick="closeMenu()">About Me</a></li>
+                <li class="nav-item"> <a class="nav-a" href="#work" onclick="closeMenu()">Work</a></li>
+                <li class="nav-item"> <a class="nav-a" href="#contact" onclick="closeMenu()">Contact Me</a><li>
+                <li class="nav-item"> <a class="nav-a" href="https://drive.google.com/file/d/1GwEbXEJLJZXkx-SqxCBybLJ_rFb-uxVl/view?usp=sharing" target="_blank" onclick="closeMenu()">Resume</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -145,4 +150,5 @@
     
 </body>
 
+<script src="./assets/js/main.js"></script>
 </html>
