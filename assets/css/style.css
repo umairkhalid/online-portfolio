@@ -49,15 +49,6 @@ header {
 	z-index: 1;
 }    
 
-.nav-container a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.nav-container a:hover {
-    color: var(--turquoise);
-}
-
 main {
     flex-wrap: wrap;
 }
@@ -99,9 +90,38 @@ footer p {
     font-size: 20px;
 }
 
-.nav-container ul li {
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
     display: inline-flex;
     margin-left: 16px;
+}
+
+.nav-a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-a:hover {
+    color: var(--turquoise);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #74a391;
 }
 
 .hero {
@@ -205,7 +225,7 @@ footer p {
 			
 		.card:hover .info {
             opacity: 1;
-			transform: translateY(0px);
+			transform: translateY(-20px);
         }
 			
 	.card:before {
@@ -358,11 +378,23 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    header,
+    .nav-menu,
     .container,
     div#about-me.container .card-container
     {
         flex-direction: column;
+    }
+
+    header {
+        position: fixed;
+    }
+
+    .hero-sub {
+        display: none;
+    }
+
+    h1.headings {
+        font-size: 32px;
     }
 
     .card:nth-child(1) {
@@ -397,8 +429,50 @@ footer p {
         font-size: 15px;
     }
 
-    .nav-container ul li {
-        margin-left: 8px;
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 5rem;
+        background-color: var(--blue);
+        width: 100%;
+        border-radius: 10px;
+        z-index: 1;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .nav-a {
+        font-size: 20px;
+        line-height: 2px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .nav-link li {
