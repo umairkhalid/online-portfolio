@@ -12,7 +12,7 @@ Let’s take a look at the GIF of how the project looks like
 
 ## Portfolio Thumbnail
 - - -
-![portfolio demo](./assets/images/Portfolio_Demo.gif)
+![portfolio demo](./assets/images/demo.gif)
 
 
 
