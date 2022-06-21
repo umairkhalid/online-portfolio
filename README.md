@@ -7,6 +7,7 @@ This is a portfolio of work which showcase my skills and talents to employers lo
 
 Let’s take a look at the GIF of how the project looks like
 
+**Note:** `PLEASE ALLOW A MOMENT FOR DEMO TO LOAD..!!`
 
 ## Portfolio Thumbnail
 - - -
